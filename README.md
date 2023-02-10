@@ -1,4 +1,4 @@
-# Simple API
+# ARAS-pymongo
 Very simple flask API examples
 
 
@@ -15,17 +15,11 @@ Installation:
 Works well with docker-desktop for macbook
 
 ```
-% git clone https://github.com/xod442/simple_api.git
-% cd simple_api
-simple_api%  docker-compose up -d
+% git clone https://github.com/xod442/ARAS-pymongo.git
+% cd ARAS-pymongo
+ARAS-pymongo%  docker-compose up -d
 ```
 
-# Test api directory
-simple_api/tests
 
-./simple.py
 
-open browser localhost:5000/add/6/3
-open browser localhost:5000/subtract/6/3
-open browser localhost:5000/multiply/6/3
-open browser localhost:5000/divide/6/3
+open browser localhost:5001
