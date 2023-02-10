@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% include "navbar.html" %}
+
+{% block content %}
+
+        <div class="container">
+            <div class="row mt-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center heading-separator" style="color:black">Add Contact</h2>
+                    <form method="POST" action="{{ url_for('.add_customer')}}">
+                        <div class="row">
+                          <div>
+                            <p style="color:red">  {{ message }}  </p>
+                          </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="list_company" style="color:white">Name:</label>
+                                  <input type="text" placeholder="Do Not Use Quotes" class="form-control" id="name" name="name">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="list_company" style="color:white">Phone:</label>
+                                  <input type="tel" placeholder="123-456-7890" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="list_company" style="color:white">email:</label>
+                                  <input type="email" placeholder="bob@bob.com" class="form-control" id="email" name="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-20">
+                            <button class="btn btn-green">Add Contact</button>
+                        </div>
+                    </form>
+                </div>
+            </div><
+
+
+
+
+  {% endblock %}
